@@ -8,6 +8,8 @@
 export default {
   name: 'works'
 }
+
+//http://aurelien-loyer.fr/wp-json/wp/v2/work/
 </script>
 
 <style lang="css">
