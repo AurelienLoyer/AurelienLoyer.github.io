@@ -1,6 +1,16 @@
-# t3kstiil3.github.io
+# Personal website build using VueJS
 
-> A Vue.js project
+## Description
+
+### Wordpress version
+http://aurelien-loyer.fr/
+
+### VueJS version
+https://t3kstiil3.github.io/
+
+### Wordpress API v2
+
+In this version i'm using the wordpress api v2 to provide my vuejs app
 
 ## Build Setup
 
@@ -14,5 +24,3 @@ npm run dev
 # build for production with minification
 npm run build
 ```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
