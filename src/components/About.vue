@@ -1,25 +1,12 @@
 <template lang="html">
-  <section id="about">
-    <img src="http://aurelien-loyer.fr/wp-content/themes/aurelienloyer-fr/img/iceberg.png" class="iceberg">
-    <img src="http://aurelien-loyer.fr/wp-content/themes/aurelienloyer-fr/img/boat.png" class="boat">
-
+  <section id="about" class="trans05">
     <div class="col-xs-12 col-sm-4 photo">
-      <img class="trans05 to animate" src="http://aurelien-loyer.fr/wp-content/themes/aurelienloyer-fr/img/moi_picto.png">
+      <img class="trans05" v-bind:class="{ animate: isLoading }" src="src/assets/moi_picto.png">
     </div>
     <div class="col-xs-12 col-sm-8 bio">
-      <h2 class="trans05 to animate">{{about_name}}</h2>
-      <br>
-      <h3 class="trans05 to animate">{{about_work}}</h3>
-      <p class="trans05 to animate">
-        {{about_descritpion}}
-      </p>
-    </div>
-
-    <div class="hover">
-      <h3 class="about_more">Pour en savoir plus sur moi, sur mon parcours, n‘hésitez pas à télécharger mon curiculum vitae</h3><br>
-      <a target="_blank" href="#url de mon cv....">
-        <h3 class="border trans05">TELECHARGER MON CV</h3><img class="save_picto trans05" src="http://aurelien-loyer.fr/wp-content/themes/aurelienloyer-fr/img/save_picto.png">
-      </a>
+      <h2 class="trans05" v-bind:class="{ animate: isLoading }">{{about_name}}</h2><br>
+      <h3 class="trans05" v-bind:class="{ animate: isLoading }">{{about_work}}</h3>
+      <p class="trans05" v-bind:class="{ animate: isLoading }">{{decodeHtml(about_descritpion)}}</p>
     </div>
   </section>
 </template>
@@ -29,10 +16,33 @@ export default {
   name: 'about',
   data(){
     return {
-      about_name: "Aurélien Loyer",
-      about_work: "Web Consultant @ Zenika",
-      about_descritpion: "Consultant Web chez Zenika Lille depuis novembre 2015. J’ai pu m’expérimenter dans le milieu du développement grâce à de nombreux projets chez des clients, à des projets personnels et associatifs ainsi qu'avec des stages effectués pendant mes années d'études @ Supinfo. Je m’intéresse beaucoup aux technologies du WEB et tout ce qui lui appartient. Si vous pensez que je peux vous aider, n'hésitez plus… <br>Je serai ravi de travailler avec vous !"
+      isLoading : true,
+      about_name: '',
+      about_work: '',
+      about_descritpion: '',
+      about_photo : ''
     }
+  },
+  methods: {
+    decodeHtml: function (html) {
+      console.log(html)
+      var txt = document.createElement("textarea")
+      txt.innerHTML = html
+      return txt.value
+    }
+  },
+  created(){
+    let about_url = 'https://aurelien-loyer.fr/wp-json/wp/v2/about/5'
+
+    this.$http.get(about_url).then(response => {
+      if(response.body.acf){
+        this.about_name = response.body.acf.about_name
+        this.about_work = response.body.acf.about_work
+        this.about_descritpion = response.body.acf.about_descritpion
+        this.about_photo = response.body.acf.about_photo
+        this.isLoading = false;
+      }
+    })
   },
 }
 
@@ -40,6 +50,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+$break-small: 320px;
+$break-large: 1200px;
+
 #about {
   width: 100%;
   height: auto;
@@ -47,32 +61,44 @@ export default {
   position: relative;
   overflow: hidden;
   padding: 4% 0px;
-  .iceberg {
-    position: absolute;
-    margin-left: 45%;
-    z-index: 2;
-    width: 10%;
-    top: -500px;
+
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: $break-small) {
+    display: block;
   }
-  .boat {
-    position: absolute;
-    margin-left: -200px;
-    z-index: 2;
-    overflow: hidden;
-    top: 100%;
-    margin-top: -14px;
-  }
+
   .photo {
     text-align: right;
     height: 100%;
+    width: 300px;
+    max-width: 50%;
+    margin-right: 10%;
+
+    @media screen and (max-width: $break-small) {
+      margin: auto;
+      text-align: center;
+      max-width: 80%;
+    }
+
     img {
-      width: 50%;
+      width: 100%;
+      max-width: 220px;
       border-left: solid 2px #073F71;
       padding-left: 15%;
     }
   }
   .bio {
     height: 100%;
+    max-width: 50%;
+
+    @media screen and (max-width: $break-small) {
+      margin-top: 20px;
+      max-width: 80%;
+      margin-left: 10%;
+    }
+
     h2 {
       font-weight: lighter;
     }

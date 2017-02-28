@@ -3,9 +3,6 @@
     <v-header></v-header>
     <v-home></v-home>
     <v-about></v-about>
-    <v-works></v-works>
-    <v-maps></v-maps>
-    <v-contact></v-contact>
     <v-footer></v-footer>
   </div>
 </template>
