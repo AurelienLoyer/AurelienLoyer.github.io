@@ -2,15 +2,16 @@
 
 ## Description
 
-### Wordpress version
-http://aurelien-loyer.fr/
-
 ### VueJS version
+https://aurelien-loyer.fr/
 https://t3kstiil3.github.io/
+
+### old front Wordpress version
+https://wp.aurelien-loyer.fr/
 
 ### Wordpress API v2
 
-In this version i'm using the wordpress api v2 to provide my vuejs app
+In this version i'm using the wordpress api v2 to provide my vuejs app :)
 
 ## Build Setup
 
