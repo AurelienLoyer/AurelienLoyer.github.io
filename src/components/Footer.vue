@@ -3,7 +3,7 @@
     <a href="https://github.com/T3kstiil3" target="_blank">
       <img class="trans05" src="src/assets/github.png" alt="">
     </a>
-    <a href="https://twitter.com/T3kstiil3">
+    <a href="https://twitter.com/AurelienLoyer">
       <img class="trans05" src="src/assets/twitter.png" alt="">
     </a>
   </footer>

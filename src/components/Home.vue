@@ -64,6 +64,7 @@ $break-large: 1200px;
     margin-bottom: 5%;
     font-size: 25px;
     padding: 8px 35px;
+    font-weight: 300;
 
     @media screen and (max-width: $break-small) {
       margin-left: 20px;
