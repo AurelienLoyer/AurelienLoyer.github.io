@@ -20,7 +20,7 @@ export default {
     }
   },
   created(){
-    let about_url = 'https://wp.aurelien-loyer.fr/wp-json/wp/v2/about/5'
+    let about_url = 'http://wp.aurelien-loyer.fr/wp-json/wp/v2/about/5'
 
     this.$http.get(about_url).then(response => {
       if(response.body.acf){
