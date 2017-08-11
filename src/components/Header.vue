@@ -31,6 +31,7 @@ header {
   height: 100px;
   z-index: 3;
   padding-top: 2%;
+  user-select: none;
 }
 
 .menu-open header {

@@ -22,6 +22,7 @@ export default {
 
   created: function () {
     window.addEventListener('resize', this.handleResize)
+    window.addEventListener('click', this.handleResize)
   },
   beforeDestroy: function () {
     window.removeEventListener('resize', this.handleResize)
@@ -30,7 +31,8 @@ export default {
   methods: {
 
     handleResize () {
-      console.log('resize')
+      this.WIDTH = window.innerWidth
+      this.HEIGHT = window.innerHeight
       this.init()
     },
 
@@ -87,11 +89,6 @@ export default {
       
       // create a star field
       this.star_field(context, 100)
-      
-      // create a new star field when you click on the canvas
-      canvas.addEventListener ('click', function () {
-        this.star_field(context, 100)
-      }, false)
     }
   },
 }

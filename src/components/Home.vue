@@ -52,7 +52,6 @@ $break-large: 1200px;
   transition: all 0s;
   background-color: #231f20;
   overflow: hidden;
-  background-image: url("/src/assets/stars.png");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,6 +62,7 @@ $break-large: 1200px;
   color: white;
   position: relative;
   z-index: 1;
+  user-select: none; 
 
   .border {
     border: solid 3px white;
