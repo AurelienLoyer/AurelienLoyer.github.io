@@ -1,7 +1,8 @@
 <template lang="html">
   <section id="home">
         <img src="src/assets/earth.png" class="earth">
-        <img src="src/assets/scroll-down.gif" class="mouse_down">
+        <v-stars></v-stars>
+        <v-scroll class="mouse_down"></v-scroll>
         <div class="containt">
             <h2 class="border trans05" v-bind:class="{ animate: isLoading }">{{about_work}}</h2><br>
         </div>
@@ -9,6 +10,10 @@
 </template>
 
 <script>
+
+import Scroll from './home/Scroll.vue'
+import Stars from './home/Stars.vue'
+
 export default {
   name: 'home',
   data(){
@@ -18,6 +23,10 @@ export default {
       about_work: '',
       about_descritpion: ''
     }
+  },
+  components: {
+    'v-scroll': Scroll,
+    'v-stars': Stars,
   },
   created(){
     let about_url = 'http://wp.aurelien-loyer.fr/wp-json/wp/v2/about/5'
@@ -53,6 +62,7 @@ $break-large: 1200px;
   width: 100%;
   color: white;
   position: relative;
+  z-index: 1;
 
   .border {
     border: solid 3px white;
