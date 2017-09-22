@@ -75,6 +75,7 @@ $break-large: 1200px;
     font-size: 25px;
     padding: 8px 35px;
     font-weight: 300;
+    max-width: 50%;
 
     @media screen and (max-width: $break-small) {
       margin-left: 20px;

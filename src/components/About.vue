@@ -142,6 +142,10 @@ $break-large: 1200px;
 
 @media all and (max-width: 768px) {
   #about {
+    
+    display: block;
+    text-align: center;
+
     .photo {
       img {
         width: 70%;
@@ -150,6 +154,15 @@ $break-large: 1200px;
         margin: auto;
       }
       text-align: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      max-width: initial;
+    }
+    .bio{
+      width: 100%;
+      max-width: 80%;
+      margin: 20px auto;
     }
     .bio p {
       max-width: 100%;
