@@ -2,15 +2,10 @@
   <header>
     <h1>AURÉLIEN<span>/LOYER</span></h1>
 
-    <div class="ico-menu trans05">
-      <img data-menu="src/assets/picto-menu.png" data-close="src/assets/picto-close.png" src="src/assets/picto-menu.png">
-    </div>
-
     <div class="menu trans05">
       <ul>
         <li data-section="#home"><a href="#home">HOME</a></li>
         <li data-section="#about"><a href="#about">A PROPOS</a></li>
-        <!--<li data-section="#work"><a href="#work">RÉALISATIONS</a></li>-->
         <li data-section="#contact"><a href="#footer">CONTACT</a></li>
       </ul>
     </div>
