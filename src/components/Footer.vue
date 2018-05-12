@@ -8,6 +8,10 @@
       <img src="src/assets/twitter.png" alt="">
       <br> Twitter
     </a>
+    <a class="trans02" href="https://www.linkedin.com/in/aurelien-loyer/">
+      <img src="src/assets/linkedin.png" alt="">
+      <br> Linkedin
+    </a>
   </footer>
 </template>
 

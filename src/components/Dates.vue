@@ -1,7 +1,7 @@
 <template lang="html">
   <section id="dates">
 
-    <h2>Conférences / Talks</h2>
+    <h2>Conférences / Speaker</h2>
 
     <div class="row past">
       <div class="point" v-for="date in past">
@@ -49,12 +49,6 @@
           {
             text: "Devfest Lille 2018"
           },
-          {
-            icon: "src/assets/plane_w.svg"
-          },
-          {
-            text: "Montreal<br>mi<br>2018"
-          }
         ]
       };
     }
