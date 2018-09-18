@@ -7,7 +7,7 @@
       <h2 class="trans05" v-bind:class="{ animate: isLoading }">{{about_name}}</h2>
       <br>
       <h3 class="trans05" v-bind:class="{ animate: isLoading }">{{about_work}}</h3>
-      <p class="trans05" v-bind:class="{ animate: isLoading }">{{decodeHtml(about_descritpion)}}</p>
+      <p class="trans05" v-bind:class="{ animate: isLoading }" v-html="about_descritpion"></p>
     </div>
   </section>
 </template>
@@ -24,13 +24,7 @@
         about_photo: ''
       }
     },
-    methods: {
-      decodeHtml: function (html) {
-        var txt = document.createElement("textarea")
-        txt.innerHTML = html
-        return txt.value
-      }
-    },
+    methods: {},
     created() {
       let about_url = 'https://wp.aurelien-loyer.fr/wp-json/wp/v2/about/5'
 
