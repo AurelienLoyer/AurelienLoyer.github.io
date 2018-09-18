@@ -1,0 +1,16 @@
+{
+    "short_name": "Aurélien Loyer",
+    "name": "Aurélien Loyer | Developpeur / Formateur Web",
+    "icons": [
+      {
+        "src": "/src/assets/icons-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#4a8cc6",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#4a8cc6"
+  }
