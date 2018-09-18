@@ -1,9 +1,17 @@
 var dataCacheName = 'AurelienLoyerData';
 var cacheName = 'AurelienLoyerCache';
 var filesToCache = [
-  '/assets',
-  '/index.html',
-  '/dist',
+  'dist/build.js',
+  'dist/build.js.map',
+  'src/assets/dolorean_w.svg',
+  'src/assets/earth.svg',
+  'src/assets/moi_picto.png',
+  'src/assets/github.png',
+  'src/assets/twitter.png',
+  'src/assets/linkedin.png',
+  'src/assets/icons-192.png',
+  'index.html',
+  'favicon.ico',
 ];
 
 self.addEventListener('install', function(e) {
