@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 
 module.exports = {
   entry: './src/main.js',
@@ -102,6 +103,6 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
-    })
+    }),
   ])
 }

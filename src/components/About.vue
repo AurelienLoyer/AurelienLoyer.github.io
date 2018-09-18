@@ -1,7 +1,7 @@
 <template lang="html">
   <section id="about" class="trans05">
     <div class="col-xs-12 col-sm-4 photo">
-      <img class="trans05" v-bind:class="{ animate: isLoading }" src="src/assets/moi_picto.png">
+      <img class="trans05" v-bind:class="{ animate: isLoading }" src="src/assets/moi_picto.png" alt="me">
     </div>
     <div class="col-xs-12 col-sm-8 bio">
       <h2 class="trans05" v-bind:class="{ animate: isLoading }">{{about_name}}</h2>

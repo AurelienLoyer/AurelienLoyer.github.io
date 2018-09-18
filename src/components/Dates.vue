@@ -15,7 +15,7 @@
       <div class="point" v-for="date in futur">
         <div class="item">
           <span v-if="date.text" v-html="date.text" />
-          <img v-if="date.icon" :src="date.icon" />
+          <img v-if="date.icon" :alt="date.alt" :src="date.icon" />
         </div>
       </div>
     </div>
@@ -52,7 +52,8 @@ export default {
           text: "Montreal"
         },
         {
-          icon: "src/assets/dolorean_w.svg"
+          icon: "src/assets/dolorean_w.svg",
+          alt: "dolorean"
         },
         {
           text: "Comming soon"

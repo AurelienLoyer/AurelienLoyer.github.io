@@ -1,6 +1,6 @@
 <template lang="html">
   <section id="home">
-        <img src="src/assets/earth.svg" class="earth">
+        <img src="src/assets/earth.svg" alt="earth" class="earth">
         <v-stars></v-stars>
         <v-scroll class="mouse_down"></v-scroll>
         <div class="containt">
