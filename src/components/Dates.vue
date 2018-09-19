@@ -56,7 +56,7 @@ export default {
           alt: "dolorean"
         },
         {
-          text: "Comming soon"
+          text: "Coming soon"
         }
       ]
     };
