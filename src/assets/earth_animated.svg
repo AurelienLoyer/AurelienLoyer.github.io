@@ -1,0 +1,32 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1280 1280" style="" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#231F20;}
+	.st2{fill:#4A8CC6;}
+	.st3{fill:none;stroke:#4A8CC6;stroke-width:10;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+</style>
+<g id="Fond" class="st0">
+	<path class="st1 ilpMsrOc_0" width="1280" height="1280" d="M0 -1 L1280 -1 L1280 1279 L0 1279 Z"></path>
+</g>
+<g id="terre">
+	<path class="st2 ilpMsrOc_1" d="M144.39999999999998,640A495.6,495.6 0,1,1 1135.6,640A495.6,495.6 0,1,1 144.39999999999998,640"></path>
+</g>
+<g id="anneaux">
+	<path class="st3 ilpMsrOc_2" d="M8.5,640A631.5,616.2 0,1,1 1271.5,640A631.5,616.2 0,1,1 8.5,640"></path>
+</g>
+<g id="cont_1">
+	<path class="st4 ilpMsrOc_3" d="M243,341.7l140,60.9l32.8,85.6l141.3-17.9l48.6,60.2l36-49.1l21.6-87.3l-37.1-25.1l-30.7-44.7l-88.3-109.6
+		l17.8-57.9l-2-32.6c-117.1,36.3-212.5,91.1-278.7,170.6L243,341.7z"></path>
+</g>
+<g id="cont_2">
+	<path class="st4 ilpMsrOc_4" d="M893.3,214.8l20,45.7v62.1l-20,65l25.7,64.3l47.1,18.6l57.1-10h35.7l42.9-78.6
+		c-33.2-87.1-93.6-146.3-177.1-181.4"></path>
+</g>
+<g id="cont_3">
+	<path class="st4 ilpMsrOc_5" d="M539.7,665.8L519.8,716.1L565.5,764.8L599.9,897.2L585.4,967.8L630,1075.8L664.8,1032.6L706.8,1048.1L
+		755.8,1103.7L788.1,1025.3L791.7,836.4L811.6,767.5L784.3,745.1L748.8,773L694.6,748.3L672.1,687.3L609,678.9L581.1,622.4Z"></path>
+</g>
+<style data-made-with="vivus-instant">.ilpMsrOc_0{stroke-dasharray:5120 5122;stroke-dashoffset:5121;animation:ilpMsrOc_draw 1800ms linear 0ms forwards;}.ilpMsrOc_1{stroke-dasharray:3115 3117;stroke-dashoffset:3116;animation:ilpMsrOc_draw 1800ms linear 40ms forwards;}.ilpMsrOc_2{stroke-dasharray:3922 3924;stroke-dashoffset:3923;animation:ilpMsrOc_draw 1800ms linear 80ms forwards;}.ilpMsrOc_3{stroke-dasharray:1327 1329;stroke-dashoffset:1328;animation:ilpMsrOc_draw 1800ms linear 120ms forwards;}.ilpMsrOc_4{stroke-dasharray:745 747;stroke-dashoffset:746;animation:ilpMsrOc_draw 1800ms linear 160ms forwards;}.ilpMsrOc_5{stroke-dasharray:1359 1361;stroke-dashoffset:1360;animation:ilpMsrOc_draw 1800ms linear 200ms forwards;}@keyframes ilpMsrOc_draw{100%{stroke-dashoffset:0;}}@keyframes ilpMsrOc_fade{0%{stroke-opacity:1;}92.98245614035088%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
