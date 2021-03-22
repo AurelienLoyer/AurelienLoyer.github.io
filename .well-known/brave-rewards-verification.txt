@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: aurelien-loyer.fr
-Token: b46b854252374e40ee5f9901d45dac0bfb4e9380424cfa90c768fe44b36d4273

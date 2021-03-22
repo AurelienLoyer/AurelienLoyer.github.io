@@ -1,82 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aurélien Loyer 👨🏻‍💻 Software Engineer</title>
 
-<head>
-  <meta charset="utf-8">
-  <title>Aurélien Loyer - Consultant / Formateur Web @Zenika</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="src/assets/icons-192.png" />
 
-  <link rel="manifest" href="/manifest.json">
-  <link rel="apple-touch-icon" href="src/assets/icons-192.png">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="👨🏻‍💻 Software Engineer @QIMAone |
+      🍦 Javascript / @Angular / @Nodejs / @VueJs |
+      🤖 Domotic Fan |
+      🐧 Penguin lover |
+      🌱 Plant addict |
+      🐈 Cats dad |
+      💍 @MagdalenaLoyer"
+    />
+    <meta name="theme-color" content="#231f20" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="msapplication-TileImage" content="src/assets/icons-192.png" />
+    <meta name="msapplication-TileColor" content="#231f20" />
+  </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="Consultant | Formateur Web - Javascript / @Angular / @NodeJs / @VueJs - chez @ZenikaMontreal 🇨🇦 ex @ZenikaLille 🥖 | Food Addict 🍔 🥘 Fan de domotique 🤖">
-  <meta name="theme-color" content="#231f20" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Weather PWA">
-  <meta name="msapplication-TileImage" content="src/assets/icons-192.png">
-  <meta name="msapplication-TileColor" content="#231f20">
-
-</head>
-
-<body>
-  <div id="app"></div>
-  <script src="/dist/build.js"></script>
-
-  <noscript>
-    <style type="text/css">
-      html {
-        background-color: #231f20;
-        color: gold;
-      }
-
-      #app {
-        display: none;
-      }
-
-      .noscriptmsg {
-        text-align: center;
-      }
-    </style>
+  <body>
     
-    <div class="noscriptmsg">
-      <img src="src/assets/jawascript.jpg" alt="no javascript">
-      <br /><br />
-      <h1>Aurélien Loyer </h1>
-      <h2>Consultant | Formateur Web</h2>
-      <h3>Javascript / @Angular / @NodeJs / @VueJs</h3>
-      @ZenikaMontreal 🇨🇦 ex @ZenikaLille 🥖<br />
-      Food Addict 🍔 🥘 Fan de domotique 🤖
-      <br /><br />
-      You don't have javascript enabled. Good luck with that !
-    </div>
-  </noscript>
-
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then(function (registration) {
-          console.log('Registration successful, scope is:', registration.scope);
-        })
-        .catch(function (error) {
-          console.log('Service worker registration failed, error:', error);
-        });
-    }
-  </script>
-
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-47039191-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</body>
-
+  </body>
 </html>
